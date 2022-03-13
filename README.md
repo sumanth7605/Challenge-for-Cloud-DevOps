@@ -1,4 +1,4 @@
-# Installations and Commands
+# Installations
 
 # AWS CLI 
 
@@ -34,7 +34,7 @@ unzip terraform_0.12.16_linux_amd64.zip -d /usr/bin/
 
 terraform -v
 
-# After creating tf files run below commands
+# commands
 
 terraform init
 
@@ -43,7 +43,7 @@ terraform plan
 terraform apply
 
 
-# Install ansible
+# Ansible Installation Cmds
 
 sudo yum update -y
 
@@ -66,7 +66,7 @@ ssh-keygen
 ansible-playbook -i hosts jenkins.yaml
 
 
-# Install docker
+# Docker Installtion Cmds
 
 sudo yum update -y
 
