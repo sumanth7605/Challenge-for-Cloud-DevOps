@@ -4,7 +4,7 @@ provider "aws" {
 
 
 #Create security group with firewall rules
-resource "aws_security_group" "security_group_jenkins_port" {
+resource "aws_security_group" "security_group_jenkins_port1" {
   name        = "security_group_jenkins_port"
   description = "security group for jenkins"
 
@@ -36,11 +36,11 @@ resource "aws_security_group" "security_group_jenkins_port" {
 }
 
 resource "aws_instance" "myFirstInstance" {
-  ami           = "ami-0d718c3d715cec4a7"
+  ami           = "ami-0e1d30f2c40c4c701"
   key_name = var.key_name
   instance_type = var.instance_type
   security_groups= [ "security_group_jenkins_port"]
   tags= {
-    Name = "jenkins_instance"
+    Name = "jenkins_docker"
   }
 }
