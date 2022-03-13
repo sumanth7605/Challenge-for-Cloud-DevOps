@@ -1,6 +1,6 @@
 # Installations
 
-# AWS CLI 
+# Steps to Install the AWS CLI 
 
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 
@@ -10,7 +10,7 @@ sudo ./aws/install
 
 # Provide key ID,Access Key,region name details 
 
-[root@ip-172-31-92-211 ~]# /usr/local/bin/aws configure
+[root@ansible-terraform ~]# /usr/local/bin/aws configure
 
 AWS Access Key ID [None]:
 
@@ -19,8 +19,6 @@ AWS Secret Access Key [None]:
 Default region name [None]:
 
 Default output format [None]:
-
-[root@ip-172-31-92-211 ~]#
 
 # Install terraform (run below commands as root)
 
@@ -59,7 +57,7 @@ ansible --version
 
 jenkins ALL=(ALL)  NOPASSWD: ALL
 
-# Create key and copy id_rsa.pub to remote server for passwordless and run below command to install jenkins
+# Create private and public keys and copy the id_rsa.pub key to remote server for passwordless and run the below cmds to install jenkins.
 
 ssh-keygen
 
