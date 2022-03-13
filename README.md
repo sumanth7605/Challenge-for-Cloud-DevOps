@@ -53,9 +53,6 @@ sudo yum install  --enablerepo epel-playground  ansible
 
 ansible --version
 
-# Add the below line in the remote server in /etc/sudoers to make password less connection.
-
-jenkins ALL=(ALL)  NOPASSWD: ALL
 
 # Create private and public keys and copy the id_rsa.pub key to remote server for passwordless and run the below cmds to install jenkins.
 
