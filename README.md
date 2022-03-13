@@ -8,7 +8,7 @@ unzip awscliv2.zip
 
 sudo ./aws/install
 
-# Provide key ID,Access Key,region name details 
+# Provide your Access key ID,Secret Access Key and Region name details. 
 
 [root@ansible-terraform ~]# /usr/local/bin/aws configure
 
@@ -20,7 +20,7 @@ Default region name [None]:
 
 Default output format [None]:
 
-# Install terraform (run below commands as root)
+# steps to Install the terraform (run the below cmds as root user).
 
 curl -O https://releases.hashicorp.com/terraform/0.12.16/terraform_0.12.16_linux_amd64.zip
 
@@ -53,7 +53,7 @@ sudo yum install  --enablerepo epel-playground  ansible
 
 ansible --version
 
-# In remote server in /etc/sudoers file add below line
+# Add the below line in the remote server in /etc/sudoers to make password less connection.
 
 jenkins ALL=(ALL)  NOPASSWD: ALL
 
