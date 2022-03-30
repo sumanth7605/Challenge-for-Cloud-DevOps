@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "key_name" {
   description = " SSH keys to connect to ec2 instance"
-  default     =  "ansible_ec2"
+  default     =  "tech_key"
 }
 
 variable "instance_type" {

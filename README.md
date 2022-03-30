@@ -43,20 +43,14 @@ terraform apply
 
 # Ansible Installation Cmds
 
-sudo yum update -y
-
-sudo yum install python3 python3-pip -y
-
-sudo yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-
-sudo yum install  --enablerepo epel-playground  ansible
-
-ansible --version
+sudo amazon-linux-extras install ansible2
 
 
 # Create private and public keys and copy the id_rsa.pub key to remote server for passwordless and run the below cmds to install jenkins.
 
 ssh-keygen
+
+ansible -i hosts all -m ping
 
 ansible-playbook -i hosts jenkins.yaml
 
