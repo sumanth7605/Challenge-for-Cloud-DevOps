@@ -55,15 +55,15 @@ ansible -i hosts all -m ping
 ansible-playbook -i hosts jenkins.yaml
 
 
-# Docker Installtion Cmds
+# Install git $ docker
 
-sudo yum update -y
+sudo yum install git
 
 sudo amazon-linux-extras install docker
 
-sudo yum install docker
-
 sudo systemctl start docker
+
+sudo chmod 777 /var/run/docker.sock
 
 sudo usermod -a -G docker ec2-user
 
