@@ -11,7 +11,7 @@ pipeline {
     stage("run") {
       steps {
         sh """
-          docker run -d -p 6000:6000 docker_deployment
+          docker run -d -p 5000:5000 docker_deployment
         """
       }
     }
